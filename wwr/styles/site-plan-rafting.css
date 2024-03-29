@@ -122,12 +122,7 @@ nav a:hover {
   display: grid;
   justify-content: center;
 
-  grid-template-columns: repeat(6, 15%);
-  grid-template-rows: 3em 1.5em 1.5em 3em;
-  grid-template-areas: ". . home home . ."
-    ". . . top . ."
-    ". left left right right ."
-    "page2 page2 . . page3 page3";
+
 }
 .sitemap > div {
   text-align: center;
@@ -161,19 +156,8 @@ nav a:hover {
   border-top: 1px solid;
   border-right: 1px solid;
 }
-:root {
-    --primary-color: #007bff;
-    --secondary-color: #ffffff;
-    --text-color: #333333;
-}
 
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: var(--secondary-color);
-    color: var(--text-color);
-}
+
 
 header {
     background-color: var(--primary-color);
@@ -187,11 +171,6 @@ header {
 header img {
     max-width: 100px;
     height: auto;
-}
-
-
-main {
-    padding: 20px;
 }
 
 .hero {
