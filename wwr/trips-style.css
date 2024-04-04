@@ -125,17 +125,17 @@ nav a:hover {
     height: 100%;
 }
 
-#hero-msg {
+.hero-msg {
     grid-column: 2/3;
     grid-row: 1/2;
     margin-top: 100px;
 }
 
-#hero-msg h1 {
+.hero-msg h1 {
     text-align: center;
 }
 
-#hero-msg h4 {
+.hero-msg h4 {
     text-align: center;
     color: var(--headline-color-on-color);
     font-family: var(--heading-font);
@@ -271,7 +271,7 @@ nav a:hover {
 
 /* Media Queries */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) 
     #hero,
     .home-grid {
         display: block;
@@ -357,4 +357,3 @@ nav a:hover {
         background-color: var(--accent1-color);
         z-index: -1;
     }
-}
