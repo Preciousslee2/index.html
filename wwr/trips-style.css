@@ -272,7 +272,7 @@ nav a:hover {
 /* Media Queries */
 
 @media screen and (max-width: 900px) 
-    #hero,
+    #hero 
     .home-grid {
         display: block;
         height: auto;
