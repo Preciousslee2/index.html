@@ -162,3 +162,45 @@ nav a:hover {
   border-top: 1px solid;
   border-right: 1px solid;
 }
+/* Add your CSS rules here */
+
+/* Full-width image */
+.full-width-image {
+  width: 100%;
+  height: auto;
+}
+
+/* Newsletter form styling */
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"],
+.newsletter button {
+  margin: 5px;
+}
+
+/* Call to action button */
+.call-to-action .btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Grid layout */
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.grid-item {
+  text-align: center;
+}
