@@ -27,180 +27,154 @@ Fonts are separated by a & */
 
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
-
+.hero{
+  display: flex;
+  flex-direction: row;
+}
 body {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 4em;
-  font-size: 18px;
-  text-align: center;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
-img {
-  display: block;
-  margin: 0 auto;
-  max-width: 300px;
+
+header{
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../images/hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--heading-font);
-  color: var(--headline-color-on-white);
-}
-h2 {
-  text-align: center;
-}
-hr {
-  height: 3px;
-  margin: 35px 0;
-  background: var(--accent1-color);
-}
-header {
-  padding: 1em;
-  text-align: center;
-  color: var(--headline-color-on-color);
-  background-color: var(--paragraph-background-color);
-}
-header > h1, header > h2 {
-  color: var(--headline-color-on-color);
-}
-p {
-  font-family: var(--paragraph-font);
-  color: var(--paragraph-color-on-white);
-  padding: 1em;
-}
-.colors {
+
+nav{
   width: 100%;
-  min-width: 350px;
-  margin: 30px auto;
-  text-align: center;
-}
-.colors th {
-  background-color: #999;
-}
-.colors td{
-  width: 25%;
-  height: 3em;
-}
-.primary {
-  background-color: var(--primary-color);
-}
-.secondary {
-  background-color: var(--secondary-color);
-}
-.accent1 {
-  background-color: var(--accent1-color);
-}
-.accent2{
-  background-color: var(--accent2-color);
-}
-p.colored {
-  background-color: var(--paragraph-background-color);
-  color: var(--paragraph-color-on-color);
-}
-nav {
-  background-color: var(--nav-background-color);
-  line-height: 3em;
-  text-align: center;
-  font-size: 1.2em;
-}
-nav  {
-  list-style-type: none;
+  height: 20%;
+  background-color:rgba(89, 195, 195, 0.671) ;
   display: flex;
-}
-nav a {
-  padding:1em;
-  min-width: 120px;
-  text-decoration: none;
   padding: 10px;
-}
-nav a:link, nav a:visited {
-  color: var(--nav-link-color);
-}
-nav a:hover {
-  color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-background-color);
-}
-.sitemap {
-  display: grid;
-  justify-content: center;
-
-  grid-template-columns: repeat(6, 15%);
-  grid-template-rows: 3em 1.5em 1.5em 3em;
-  grid-template-areas: ". . home home . ."
-    ". . . top . ."
-    ". left left right right ."
-    "page2 page2 . . page3 page3";
-
-}
-.sitemap > div {
-  text-align: center;
-}
-.sm-home {
-  grid-area: home;
-  background-color: #ccc;
-  line-height: 3em;
-}
-.sm-FAQ {
-  grid-area: page2;
-  background-color: #ccc;
-  line-height: 3em;
-}
-.sm-page3 {
-  grid-area: page3;
-  background-color: #ccc;
-  line-height: 3em;
-}
-.top {
-  grid-area: top;
-  border-left: 1px solid;
-}
-.left {
-  grid-area: left;
-  border-top: 1px solid;
-  border-left: 1px solid;
-}
-.right {
-  grid-area: right;
-  border-top: 1px solid;
-  border-right: 1px solid;
-}
-/* Add your CSS rules here */
-
-/* Full-width image */
-.full-width-image {
-  width: 100%;
-  height: auto;
-}
-
-/* Newsletter form styling */
-.newsletter form {
-  display: flex;
-  justify-content: center;
   align-items: center;
 }
 
-.newsletter input[type="text"],
-.newsletter input[type="email"],
-.newsletter button {
-  margin: 5px;
+nav div:first-child img {
+  width: 100px;
+  margin-left: 2rem;
+}
+.navigation{
+  display: flex;
+  gap: 15rem;
+  margin-left: 10rem;
 }
 
-/* Call to action button */
-.call-to-action .btn {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
+.navigation a{
+  text-transform: capitalize;
   text-decoration: none;
-  display: inline-block;
+  color: white;
+  font-size: 27px;
 }
 
-/* Grid layout */
-.grid-layout {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+.hero{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
 }
 
-.grid-item {
-  text-align: center;
+.hero span:first-child{
+  font-size: 3rem;
+  text-transform: capitalize;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #396E94;
+}
+.hero span:nth-child(2){
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-family: sans-serif;
+  color: white;
+  margin-top: 1.2rem;
+}
+
+.hero button{
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-family: sans-serif;
+  background: #59C3C3;
+  margin-top: 1.2rem;
+  border: none;
+  padding: 1.2rem;
+  width: 10rem;
+  border-radius: 5px;
+}
+
+.hero button:hover{
+  background: #177777;
+  color: whitesmoke;
+}
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  margin-top: 3rem;
+}
+
+main div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  flex-wrap: wrap;
+}
+main img{
+  width: 18rem;
+border: .7rem solid #59C3C3;
+box-shadow: -5px 0px 27px -5px rgba(0,0,0,0.75);
+}
+.icon{
+  width: 8rem;
+  border: none;
+  box-shadow: none;
+}
+
+.mountain{
+  width: 100vw;
+  height: 70vh;
+  background: var(--nav-background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.mountain :first-child img{
+ width: 40rem; margin-left: 2rem;
+ border: .7rem solid #59C3C3;
+box-shadow: -5px 0px 27px -5px rgba(0,0,0,0.75);
+
+}
+.mountain-card{
+  background-color: rgb(205, 215, 236);
+  width: 30rem;
+  padding: 1rem;
+  margin-left: -45px;
+}
+
+.mountain-card button{
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-family: sans-serif;
+  background: #59C3C3;
+  margin-top: 1.2rem;
+  border: none;
+  padding: 1.2rem;
+  width: 10rem;
+  border-radius: 5px;
+}
+
+.mountain-card h4{
+  font-size: 2rem;
+}
+
+.mountain-card p{
+  font-size: 1.1rem;
 }
